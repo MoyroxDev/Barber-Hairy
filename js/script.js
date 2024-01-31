@@ -1,11 +1,18 @@
+const nav = document.getElementById("nav-menu");
+const menu = document.getElementById("container-nav");
+
+
 window.addEventListener("scroll",()=>{
-    const menu = document.getElementById("container-nav");
-    menu.classList.toggle("abajo",window.scrollY>0)
+    menu.classList.toggle("abajo",window.scrollY>0);
+    if (window.scrollY>0) {
+        nav.style.top = "90px";
+    }else{
+        nav.style.top = "131px";
+    }
 })
 
 
 function abrir() {
-    const nav = document.getElementById("nav-menu");
     nav.classList.toggle("nav-menu-active");
 }
 
