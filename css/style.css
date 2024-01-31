@@ -378,12 +378,11 @@ section{
 
 .divisor-price{
     height: 100%;
-    margin-top: -4px;
     flex-grow: 1;
     border-bottom: 1px dashed var(--color-primary);
 }
 
-.price-header{gap: 15px;}
+.price-header{gap: 15px; align-items: flex-end; height: max-content;}
 
 .price-header :nth-child(3){color: var(--color-primary);}
 
