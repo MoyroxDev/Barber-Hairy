@@ -69,7 +69,7 @@ body{
     align-items: center;
 }
 
-.logo{width: 110px;}
+.logo{width: 100px;}
 
 .nav-menu{
     gap: 40px;
@@ -171,16 +171,33 @@ body{
     height: 100vh;
 }
 
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    margin-right: 4.5px;
+    margin-left: 4.5px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 50%;
+    opacity: .5;
+    transition: opacity .6s ease;
+}
+
 .carousel-1{
-    background: linear-gradient(to right, rgba(34, 34, 34, 0.696), rgba(34, 34, 34, 0.696)), url(/img/corousel2.jpg);
+    background: linear-gradient(to right, rgba(34, 34, 34, 0.696), rgba(34, 34, 34, 0.696)), url("/img/corousel2.jpg");
 }
 
 .carousel-2{
-    background: linear-gradient(to right, rgba(34, 34, 34, 0.696), rgba(34, 34, 34, 0.696)), url(/img/carousel3.jpg);
+    background: linear-gradient(to right, rgba(34, 34, 34, 0.696), rgba(34, 34, 34, 0.696)), url("/img/carousel3.jpg");
 }
 
 .carousel-3{
-    background: linear-gradient(to right, rgba(34, 34, 34, 0.696), rgba(34, 34, 34, 0.696)), url(/img/carousel1.jpg);
+    background: linear-gradient(to right, rgba(34, 34, 34, 0.696), rgba(34, 34, 34, 0.696)), url("/img/carousel3.jpg");
 }
 
 .carousel-1, .carousel-2, .carousel-3{
@@ -569,11 +586,9 @@ h6{font-size: 13px; margin: 0; color: var(--text-color-des); font-family: "Playf
     height: 100%;
     font-size: 10px;
     width: 30%;
-    height:100%;
     background-color: var(--color-primary);
     color: var(--text-color);
 }
-
 
 @media (max-width: 992px) {
     .container-footer-star{
