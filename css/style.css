@@ -197,7 +197,7 @@ body{
 }
 
 .carousel-3{
-    background: linear-gradient(to right, rgba(34, 34, 34, 0.696), rgba(34, 34, 34, 0.696)), url("/img/carousel3.jpg");
+    background: linear-gradient(to right, rgba(34, 34, 34, 0.696), rgba(34, 34, 34, 0.696)), url("/img/carousel1.jpg");
 }
 
 .carousel-1, .carousel-2, .carousel-3{
